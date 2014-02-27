@@ -17,7 +17,9 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
-		return View::make('hello');
+		$latest = Book::orderBy('created_at', 'desc')->limit(6)->get();
+		$popular = Book::orderBy('title', 'desc')->limit(6)->get();
+		return View::make('hello', compact('latest', 'popular'));
 	}
 
 }

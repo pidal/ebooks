@@ -1,0 +1,20 @@
+body {
+	background: #f7f7f6;
+}
+
+.page {
+	background: #fff;
+}
+
+header {
+	margin-bottom: 20px;
+}
+
+.description {
+	padding: 20px;
+}
+.description ul li span {
+	font-weight: bold;
+	width: 80px;
+	display: inline-block;
+}
